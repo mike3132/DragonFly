@@ -1,0 +1,60 @@
+#                                                 🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥
+#                                                   💻Dragon Fly Config💻
+#                                                   🔥Coded By Mike3132🔥
+#                                                   💻Dragon Fly Config💻
+#                                                 🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥
+
+Version: 'Version 2.0'
+ConfigVersion: '2.0'
+##### WARNING: DO NOT CHANGE ANYTHING ABOVE THIS LINE IT WILL BREAK THE PLUGIN!#####
+
+#✍✍✍✍✍Permissions✍✍✍✍✍
+
+#Player permissions
+#☠☠☠☠WARNING: DO NOT GIVE THE SAME PLAYER OR GROUP  "dragonFly.Fuel" and "dragonFly.NoFuel"
+#THIS WILL CONFUSE THE PLUGIN AND MAY CAUSE IT TO NOT WORK PROPERLY ☠☠☠☠#
+#dragonFly.Use > Grants access to /fly command
+#dragonFly.Fuel > Uses fuel blocks to fly *(You must also have dragonFly.Use)*
+#dragonFly.NoFuel > Free flight *(You must also have dragonFly.Use)*
+
+#Admin Permissions
+#dragonFly.Admin > Grants access to /dragonfly commands
+#dragonFly.Reload > Reloads the plugin *(You must also have dragonFly.Admin)*
+#dragonFly.Adminfly > Grants access to use the free adminfly command *(You must also have dragonFly.Admin)*
+#dragonFly.Toggle.Others > Ability to toggle other players flight *(You must also have dragonFly.Admin)*
+#✍✍✍✍✍Permissions✍✍✍✍✍
+
+#####You can Modify the following how you wish#####
+#♢♢♢♢♢Fuel Block♢♢♢♢♢
+#☠☠☠☠ You must use single quotes '' as seen in this default config.☠☠☠☠
+# This is the item that is being used to allow them to fly, All material types can be used.
+# You can find a list of materials here > https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+Fuel: 'LAPIS_LAZULI'
+
+#♢♢♢♢♢ Amount of time for fuel to last (In game ticks [20 ticks = 1 second]) ♢♢♢♢♢
+#1200 = 1 minute
+#☠☠☠☠ WARNING: You must restart the server for this to take effect.☠☠☠☠
+Fuel-Time: 20
+
+#♢♢♢♢♢ Dragon Fly blacklisted worlds ♢♢♢♢♢
+#☠☠☠☠ Info: All commands will work, but fly will be disabled. ☠☠☠☠
+World-Blacklist-Enabled: true
+
+World-Blacklist:
+  - 'world_nether'
+  - 'world_the_end'
+
+#♢♢♢♢♢ Dragon Fly creative priority worlds ♢♢♢♢♢
+#☠☠☠☠ Info: A list of worlds where Creative flight overrides Dagon Fly. ☠☠☠☠
+Creative-Worlds-Enabled: true
+
+Creative-Worlds:
+  - 'creative'
+
+#See messages.yml for all configurable plugin messages
+#♏ If you have any questions please join my discord, open a support ticket and @Mike3132
+#♏ https://discord.gg/EHm6Ra3K
+#♏ Thanks for downloading and have a wonderful day
+
+#♛♛♛♛♛ END OF CONFIG ♛♛♛♛♛
+#This is the default config file.

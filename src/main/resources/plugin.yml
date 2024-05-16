@@ -1,0 +1,19 @@
+name: DragonFly
+version: '${project.version}'
+main: net.resolutemc.dragonfly.DragonFly
+api-version: '1.20'
+authors: [Mike3132]
+description: Fly for the cost of fuel plugin
+website: https://www.resolutemc.net
+softdepend:
+  - WorldGuard
+commands:
+  Fly:
+    description: Enable or disable fly
+    permission: dragonFly.use
+  AdminFly:
+    description: Free flight for staff
+    permission: dragonFly.AdminFly
+  DragonFly:
+    description: Plugin admin commands
+    permission: dragonFly.Admin

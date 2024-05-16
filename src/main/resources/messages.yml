@@ -1,0 +1,133 @@
+#                                                 🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥
+#                                                   💻Dragon Fly Messages💻
+#                                                   🔥Coded By Mike3132🔥
+#                                                   💻Dragon Fly Messages💻
+#                                                 🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥
+
+#✍✍✍✍ This file handles all messages for the plugin including the prefix.✍✍✍✍
+#✍✍✍✍ You can change anything here to be whatever custom stuff you want.✍✍✍✍
+#☠☠☠☠ DO NOT CHANGE THE "Messages:" line as this will break the plugin.☠☠☠☠
+#☠☠☠☠ ALL messages must have single quotes '' as seen in this default config.☠☠☠☠
+
+#📝📝📝📝 Placeholders 📝📝📝📝
+#Placehodler %Fuel% - Returns the material of the fuel from config.yml
+#Placholder %playerName% - Returns the target players display name
+
+
+#Plugin prefix is sent before ALL messages in the plugin.
+Messages:
+  #Plugin prefix for all messages.
+  Prefix: '&0[&bDragon &fFly&0] '
+
+  #➳➳➳➳➳ Player Messages ➳➳➳➳➳
+  #No permission to use /fly command
+  No-Permission: '&4ERROR: &cYou do not have permission to use this command'
+
+  #Flight Enabled message (Works for both cost of flight and free flights).
+  Flight-Enabled: '&6Flight &2Enabled'
+
+  #Flight Disabled message (Works for both cost of flight and free flights).
+  Flight-Disabled: '&6Flight &4Disabled'
+
+  #This is sent if the player only has dragonFly.Use and nothing else
+  No-Fly-Extra-Permission: '&4ERROR: &cYou need to have the following permission nodes &fdragonFly.Fuel &cor &fdragonFly.NoFuel'
+
+  #If player is not in survival mode and tries to use /fly.
+  Not-In-Survival: '&4ERROR: &cYou must be in &6Gamemode &eSurvival &cTo use flight'
+
+  #If the player does NOT have fuel (See config.yml for fuel settings) in their inventory.
+  No-Fuel-In-Inventory: '&4ERROR: &cYou need &4%Fuel% &cto fly'
+
+  #If player enters a blacklisted world (See config.yml for world blacklists).
+  Enter-Blacklisted-World: '&cYou have entered a &4&lBlacklisted &cworld'
+
+  #If player tries to turn on fly in a blacklisted world (See config.yml for world blacklists).
+  Fly-Enabled-Blacklisted-World: '&cYou cannot use fly in a &4&lBlacklisted &cworld'
+
+  #🛑🛑🛑🛑🛑 IMPORTANT 🛑🛑🛑🛑🛑
+  #When a player runs out of fuel while flying they are sent a few messages.
+  #This is the order they are sent.
+  #1. Out-Of-Fuel
+  #2. Free-Falling-Message
+  #3. Flight-Disabled
+
+  #Warning for player who is out of fuel.
+  Out-Of-Fuel: '&4&lWARNING: &cYou are out of fuel'
+
+  #Warning for player who has run out of fuel and is free-falling from the sky.
+  #The plugin will automatically negate all fall damage if the player runs out of fuel while flying.
+  Free-Falling-Message: '&eNegating fall damage'
+
+  #➳➳➳➳➳ WorldGuard Player Messages ➳➳➳➳➳
+
+  #Flight in region enabled message
+  #(This is sent to a player when they enter a worldguard region with the DragonFly flag set to allow).
+  Region-Flight-Enabled-Message: '&bYou entered a region with &2Free Fly'
+
+  #Flight in region enabled message
+  #(This is sent to a player when they enter a worldguard region with the DragonFly flag set to allow).
+  Region-Flight-Enabled-Leave-Message: '&dYou left a region reverting your fly status'
+
+  #Flight in region disabled message
+  #(This is sent to a player when they enter a worldguard region with the DragonFly flag set to deny).
+  Region-Flight-Disabled-Message: '&bYou entered a region that does not allow flight'
+
+  #Flight in region while player is using fuel.
+  #(This is sent to a player when they enter a worldguard region with the DragonFly flag set to allow, and they are currently using fuel to fly).
+  Region-Flight-Fuel-Message: '&bStopped using fuel as you are in a free fly region'
+
+  #Flight in region player leave message
+  #(This is sent to a player when they leave a worldguard region with the DragonFly flag set to allow, and was previously using fuel to fly).
+  Region-Flight-Fuel-Leave-Message: '&bYou left a region with &2Free Fly&7: &bRe-enabling your fuel cost'
+
+
+  #➳➳➳➳➳ Admin Messages ➳➳➳➳➳
+  #🛑🛑🛑🛑🛑 IMPORTANT 🛑🛑🛑🛑🛑
+  # You cannot just add more lines / message here
+  # You can only modify what is already here
+
+  #This is the admin help menu. (This runs A->Z)
+  Help-Header: '&e----- &0[&bDragon &fFly&0] &e-----'
+  Help-A: '&6&lHelp menu'
+  Help-B: '&6To get back here use /dragonfly help'
+  Help-C: '&6/DragonFly reload &7-> &eReloads plugin configuration files'
+  Help-D: '&6/DragonFly toggle <playerName> &7-> &eToggles specified players flight'
+  Help-Footer: '&e----------------------------------'
+
+  #This is sent if someone has dragonFly.Admin and they just type /dragonfly
+  Help-Trigger: '&5ADMIN &4ERROR: &cNot enough command argumenets. &ePlease use /dragonfly help'
+
+  #Admin Flight Enabled message
+  Admin-Flight-Enabled: '&5Admin &eFlight &2Enabled'
+
+  #Admin Flight Disabled message
+  Admin-Flight-Disabled: '&5Admin &eFlight &4Disabled'
+
+  #Not enough ADMIN permissions. (Sent if a player only had dragonFly.Admin and nothing else) [This covers all Admin permissions]
+  Not-Enough-Admin-Permission: '&4ERROR: &cYou only have the base admin permission. &fPlease see config.yml for a list of permission nodes'
+
+  #If player does not have dragonFly.Reload but they do have dragonFly.Admin
+  No-Reload-Permission: '&5ADMIN &4ERROR: &cYou do not have permission to execute this command'
+
+  #If player does not have dragonFly.AdminFly but they do have dragonFly.Admin
+  No-AdminFly-Permission: '&5ADMIN &4ERROR: &cYou do not have permission to execute this command'
+
+  #If player does not have dragonFly.AdminFly but they do have dragonFly.Toggle.Others
+  No-Toggle-Others-Permission: '&5ADMIN &4ERROR: &cYou do not have permission to execute this command'
+
+  #If target player is not found when using /DragonFly toggle <player>
+  Target-Not-Found: '&5ADMIN &4ERROR: &cThat is not a valid player or they are not online'
+
+  #If the target player is not flying when using /DragonFly toggle <player>
+  Target-Not-Flying: '&5ADMIN &4ERROR: &c%playerName% &eis not currently flying'
+
+  #When you disable a players flight with /DragonFly toggle <player>
+  Target-Flight-Disabled: '&5Admin &6You have disabled flight for &e%playerName%'
+
+
+#See config.yml for permissions, and other plugin configurations.
+#♏ If you have any questions please join my discord, open a support ticket and @Mike3132
+#♏ https://discord.gg/EHm6Ra3K
+#♏ Thanks for downloading and have a wonderful day
+#♛♛♛♛♛ End of messages.yml ♛♛♛♛♛
+#This is the default messages file.

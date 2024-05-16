@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="DragonFly:jar">
+    <output-path>$PROJECT_DIR$/../../../Build Tools/plugins</output-path>
+    <root id="archive" name="DragonFly.jar">
+      <element id="module-output" name="DragonFly" />
+    </root>
+  </artifact>
+</component>
