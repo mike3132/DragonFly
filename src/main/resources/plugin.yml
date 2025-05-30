@@ -1,7 +1,7 @@
 name: DragonFly
 version: '${project.version}'
 main: net.resolutemc.dragonfly.DragonFly
-api-version: '1.20'
+api-version: '1.21'
 authors: [Mike3132]
 description: Fly for the cost of fuel plugin
 website: https://www.resolutemc.net
